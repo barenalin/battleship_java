@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/wallpaperbetter.com_1920x1080.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="startbt" layoutX="246.0" layoutY="176.0" mnemonicParsing="false" onAction="#startgame" prefHeight="56.0" prefWidth="109.0" text="Start">
+         <font>
+            <Font name="Tw Cen MT Condensed Bold" size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="rulebt" layoutX="94.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#torule" prefHeight="50.0" prefWidth="97.0" text="Rule">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="settingbt" layoutX="410.0" layoutY="181.0" mnemonicParsing="false" onAction="#tosettings" prefHeight="50.0" prefWidth="97.0" text="Setting">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="28.0" />
+         </font>
+      </Button>
+      <Label layoutX="102.0" layoutY="42.0" prefHeight="83.0" prefWidth="218.0" text="Battleship: " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="42.0" prefHeight="83.0" prefWidth="198.0" text="海戰棋" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="HP Simplified Hans Regular" size="64.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ship" fitHeight="163.0" fitWidth="238.0" layoutX="-238.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Lovepik_com-400673181-aircraft-carrier.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ruleimage" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../image/rule2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ruleimage1" fitHeight="400.0" fitWidth="600.0" layoutX="1.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../image/rule.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backtomenubt" layoutX="459.0" layoutY="349.0" mnemonicParsing="false" onAction="#backtomenu" onMouseClicked="#backtomenu" prefHeight="43.0" prefWidth="128.0" text="Back to Menu" visible="false">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font></Button>
+      <Button fx:id="next" layoutX="326.0" layoutY="349.0" mnemonicParsing="false" onAction="#nextrule" prefHeight="43.0" prefWidth="78.0" text="next" visible="false">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnbt" layoutX="191.0" layoutY="349.0" mnemonicParsing="false" onAction="#torule1" prefHeight="43.0" prefWidth="78.0" text="return" visible="false">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
